@@ -1,12 +1,11 @@
-import React, {Component} from 'react';
-import Link from 'next/link';
+import React from 'react';
 
-class Navbar extends Component{
 
-    render(){
-        return(
-            <div className="header-navbar">
-                <ul className="navigation">
+const Drawer = ()=>{
+    return(
+        <div className="navigation-drawer">
+            
+            <ul className="navigation">
 
                     <li>
                         <a>
@@ -23,11 +22,9 @@ class Navbar extends Component{
                     </li>
 
                     <li>
-                        <Link href="/search">
                         <a>
-                            Browse
+                            Browse Ads 
                         </a>
-                        </Link>
                         <ul className="dropdown-menu">
                             <li>
                                 <a>Home Page</a>
@@ -68,11 +65,11 @@ class Navbar extends Component{
                         </ul>
                     </li>
 
-                </ul>
-            </div>
-        )
-    }
+            </ul>
+            
+        </div>
+    )
 }
 
 
-export default Navbar;
+export default Drawer;

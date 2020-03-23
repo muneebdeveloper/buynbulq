@@ -7,16 +7,25 @@ class Actionbar extends Component{
             <div className="special-nav flex-wrap">
                 
                 <a className="actionbar-btn">
-                    chg
+                    <svg className="header-action-nav-svg">
+                        <use xlinkHref='/svg/sprites.svg#icon-heart-o'></use>
+                    </svg>
+                    <span className="number-bubble">0</span>
                 </a>
 
                 <a className="actionbar-btn">
-                    chg
+                    <svg className="header-action-nav-svg">
+                        <use xlinkHref='/svg/sprites.svg#icon-shopping-cart'></use>
+                    </svg>
+                    <span className="number-bubble">0</span>
                 </a>
 
-                <a className="account-btn">
+                <a className="account-btn" style={{display:"flex",justifyContent:'center'}}>
+                    <svg className="header-action-nav-svg" style={{width: '22px',height: '22px',marginRight: '5px'}}>
+                        <use xlinkHref='/svg/sprites.svg#icon-user'></use>
+                    </svg>
                     <span>
-                        Submit
+                        SignUp / Login
                     </span>
                 </a>
 

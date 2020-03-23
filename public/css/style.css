@@ -42,12 +42,6 @@ input:focus{
     outline:none;
 }
 
-/* Main skeleton */
-.container{
-    display:grid;
-    grid-template-columns:1fr repeat(8,minmax(min-content,8.9062rem)) 1fr;
-}
-
 /* General used classes */
 .flex-wrap{
     display: flex;
@@ -66,29 +60,59 @@ input:focus{
 }
 /* Header styles */
 .header{   
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 12;
     right: 0;
     box-shadow: none;
-    background: rgba(55,66,82,.4);
+    /* background: rgba(55,66,82,.4); */
+    background-color:#374252;
     border-bottom: 1px solid rgba(255,255,255,.12);
+    padding:10px 0px;
 }
 
-.header .toolbox{
+.header-nav-svg{
+    fill: #fff;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.header-action-nav-svg{
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.number-bubble{
+    color: #fff;
+    font-size: 13px;
+    background: #00a591;
+    line-height: 1;
+    font-weight: 700;
+    padding: 4px;
+    font-family: 'Quicksand',sans-serif;
+    border-radius: 100%;
+    position: absolute;
+    top: -8px;
+    right: -9px;
+}
+
+.container{
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.header .logo {
+.logo {
     width: 170px;
     line-height: 1;
 }
 
-.header .navigation{
+.navigation{
     display: flex;
     align-items: center;
     color: #202020;
@@ -104,7 +128,7 @@ input:focus{
     float: left;
 }
 
-.header .navigation a{
+.navigation a{
     position:relative;
 }
 
@@ -150,7 +174,7 @@ input:focus{
 }
 
 .actionbar-btn{
-    margin-right: 20px;
+    margin-right: 25px;
     font-size: 23px;
     position:relative;
 }
@@ -168,41 +192,7 @@ input:focus{
     }
 }
 
-
-@media (min-width: 768px){
-    .header .toolbox {
-        width: 750px;
-    }
-}
-
-
-@media (min-width: 992px){
-    .header .toolbox {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1025px){
-    .header .logo {
-        margin: 10px 0;
-    }
-
-    .navigation>li>a{
-        color: #fff;
-    }
-
-    .header .navigation>li:first-child>a {
-        padding-left: 0;
-    }
-
-    .header .actionbar-btn{
-        color:#fff;
-    }
-
-    .dropdown-menu li a {
-        white-space: nowrap;
-    }
-
+@media (min-width: 578px){
     .account-btn{
         padding: 10px 20px;
         color: #fff;
@@ -212,8 +202,45 @@ input:focus{
 }
 
 
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1025px){
+    .logo {
+        margin: 10px 0;
+    }
+
+    .navigation>li>a{
+        color: #fff;
+    }
+
+    .navigation>li:first-child>a {
+        padding-left: 0;
+    }
+
+    .actionbar-btn{
+        color:#fff;
+    }
+
+    .dropdown-menu li a {
+        white-space: nowrap;
+    }
+
+}
+
+
 @media (min-width: 1200px){
-    .header .toolbox {
+    .container {
         width: 1170px;
     }
 }

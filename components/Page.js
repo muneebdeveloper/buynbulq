@@ -22,10 +22,8 @@ class Page extends Component{
         return(
             <>
                 <Meta />
-                <div className="container">
                     <Header />
-                    {this.props.children}   
-                </div>
+                    {this.props.children}
             </>
         );
 

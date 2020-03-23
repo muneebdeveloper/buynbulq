@@ -1,8 +1,9 @@
+import Home from '../components/Home/Index';
 
 const HomePage = ()=>{
 
     return(
-        <h1>Hello world</h1>
+        <Home />
     )
 }
 

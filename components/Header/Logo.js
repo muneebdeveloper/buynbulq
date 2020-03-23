@@ -5,12 +5,9 @@ const Logo = ()=>{
     return(
         <Link href="/">
             <a className="logo">
-                <img 
-                    src="/images/logo.png"
-                    alt="logo"
-                    width={170}
-                    height={50}
-                />
+                <h3 style={{fontFamily:'"Nunito",sans-serif',color:'#fff',margin:0}}>
+                    BuynBulq
+                </h3>
             </a>
         </Link>
     );

@@ -1,0 +1,57 @@
+.responsivepadding{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+@media screen and (max-width:1200px){
+    .responsivepadding{
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+   
+}
+
+@media (max-width: 1024px){
+    .header-navbar{
+        display:none;
+    }
+
+    .navigation {
+        display: block;
+        text-align: left;
+    }
+
+    .navigation>li {
+        display: block;
+        float: none;
+        padding: 10px;
+    }
+
+    .navigation li a {
+        padding: 0;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .dropdown-menu {
+        background: 0 0;
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .header-nav-svg{
+        fill: #202020;
+    }
+
+}
+
+@media screen and (max-width:579px){
+    .responsivepadding{
+        padding-left:15px;
+        padding-right:15px;
+    }
+}
